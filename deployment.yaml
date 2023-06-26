@@ -23,3 +23,6 @@ spec:
         env:
         - name: NAME
           value: Chris
+        volumeMounts:
+          - mountPath: "/data/app/node-challenge-pv"
+            name: node-challenge-pvc
