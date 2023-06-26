@@ -22,5 +22,5 @@ spec:
         - containerPort: 4000
         env:
         - name: NAME
-          value: Chris
+          value: {{ jenkins.NAME }}
 
