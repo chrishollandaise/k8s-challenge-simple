@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+  labels:
+    app: node-challenge
+spec:
+  selector:
+    app: node-challenge
+  ports:
+    - port: 4000
+      targetPort: 4000
+  type: LoadBalancer
